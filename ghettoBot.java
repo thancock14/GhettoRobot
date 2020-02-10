@@ -16,17 +16,12 @@ public class ghettoBot {
 
    
       Behavior b1 = new spinBot(blue, sonar);
-      Behavior b2 = new senseLine(blue);
-      Behavior b3 = new seeOtherBot(blue, sonar);
-      Behavior b4 = new hitButton(blue);
-      Behavior [] bArray = {b1, b3, b4, b2};
+      Behavior b2 = new seeOtherBot(blue, sonar);
+      Behavior b3 = new hitButton(blue);
+      Behavior b4 = new senseLine(blue);
+      //Array is in increasing priority order as defined by Arbitrator docs
+      Behavior [] bArray = {b1, b2, b3, b4};
       Arbitrator arby = new Arbitrator(bArray);
-      //Arbitrator arbitrator = new  Arbitrator(bArray);
-      arby.start();
-      //arbitrator.start();
-      
-      
-      
-      
+      arby.start();  
    }
 }
