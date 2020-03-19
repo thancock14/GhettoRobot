@@ -18,4 +18,4 @@ controlled a set of wheels and motors and the other controlled another set of wh
 and motors.  After a few trials and errors I found the average delay time and it 
 ran rather smoothly.
 
-Written by Terence Hancock
+Written by Terence Hancock and Levi Liester
